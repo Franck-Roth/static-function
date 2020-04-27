@@ -7,12 +7,13 @@ class Speedometer
 
     public static function convertMilesKM($km)
     {
-        return $km * self::KMTOMILES;
+        $calcul = self::KMTOMILES * $km;
+        return round($calcul, 2);
     }
 
-    public static function convertKmMiles($miles)
+    public static function convertKmMiles($km)
     {
-        return $miles * self::MILESTOKM;
+        $calcul = self::MILESTOKM * $km;
+        return round($calcul, 2);
     }
 }
-
